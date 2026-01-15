@@ -1,0 +1,146 @@
+/* Level 1 */
+
+#level-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+/* Level 2 */
+
+#level-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+#level-2 :nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+/* Level 3 */
+
+#level-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+#level-3 :nth-child(2) {
+  grid-column: 2 / 4;
+}
+#level-3 :nth-child(3) {
+  grid-column: 1 / 3;
+}
+#level-3 :nth-child(5) {
+  grid-column: 1 /4;
+}
+
+/* Level 4 */
+
+#level-4 {
+  display: grid;
+  grid-template-columns: repeat(3);
+  gap: 0.5rem;
+}
+#level-4 :nth-child(1) {
+  grid-column: 1 / 3;
+}
+#level-4 :nth-child(2) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+#level-4 :nth-child(5) {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+/* Level 5 */
+
+#level-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+#level-5 :nth-child(1) {
+  grid-column: 4 / 6;
+  grid-row: 2 / 3;
+}
+#level-5 :nth-child(2) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+#level-5 :nth-child(3) {
+  grid-column: 2 / 5;
+  grid-row: 3 / 4;
+}
+#level-5 :nth-child(4) {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+}
+#level-5 :nth-child(5) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+/* Level 6 */
+
+#level-6 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+#level-6 :nth-child(1) {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+#level-6 :nth-child(2) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+#level-6 :nth-child(3) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
+}
+#level-6 :nth-child(4) {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+}
+#level-6 :nth-child(5) {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+/* Level 7 */
+
+#level-7 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(5ch, 1fr));
+  grid-row: 1;
+  gap: 0.5rem;
+}
+
+/* Level 8 */
+
+#level-8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15ch);
+  grid-auto-rows: 5ch;
+  gap: 0.5rem;
+}
+
+/* Level 9 */
+
+#level-9 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-auto-rows: 5rem;
+  gap: 0.5rem;
+}
+
+/* Template for Child Elements
+
+#level-# :nth-child(1) {grid-column: 1; grid-row: 1}
+#level-# :nth-child(2) {grid-column: 1; grid-row: 1}
+#level-# :nth-child(3) {grid-column: 1; grid-row: 1}
+#level-# :nth-child(4) {grid-column: 1; grid-row: 1}
+#level-# :nth-child(5) {grid-column: 1; grid-row: 1} */
